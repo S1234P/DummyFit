@@ -1,0 +1,38 @@
+from tkinter import *
+
+
+window = Tk()
+root = Tk()
+
+root.title("DummyFit")
+
+root.geometry('340x720')
+
+lbl = Label(root, text="DummyFit", font=("Arial Bold", 50))
+
+lbl.grid(column=0, row=0)
+
+
+
+
+
+
+
+txt = Entry(root,width=10,)
+txt.grid(column=0, row=1)
+
+def clicked():
+
+    rlt.configure(text="#Output from results")
+
+btn = Button(root, text="Enter", command=clicked)
+
+btn.grid(column=0, row=5)
+
+
+rlt = Label(root, text="Results", font=("Arial Bold", 10))
+rlt.grid(column=0, row=8)
+
+
+
+root.mainloop()
